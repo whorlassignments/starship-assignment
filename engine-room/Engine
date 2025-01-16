@@ -38,8 +38,8 @@ for item in items_required:
     for count in range(items_required[item]):
         # Drop the item from inventory and then
         # remove it from the directory immediately
-        pass #Dropped([item])
-        #os.remove(f"{item}.py")
+        Dropped([item])
+        os.remove(f"{item}.py")
 
 # Narrate the correct outcome
 n.path.change({
