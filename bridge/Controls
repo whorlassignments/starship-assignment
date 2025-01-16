@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import os
+import sys
+
+from narrator import Checkpoint
+
+if Checkpoint.check_flag("engine_started"):
+    print("Engine started!")
+    sys.exit(0)
+
+print("The ship...doesn't seem to be going anywhere.")

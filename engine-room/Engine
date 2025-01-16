@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import narrator
+
+from narrator import Checkpoint
+from inventory.main import search
+from inventory.Drop import Dropped
+
+n = narrator.Narrator()
+
+# Set up the required number of parts
+# for the user to have collected.
+items_required = {
+    "Sprocket": 3,
+    "FluxCapacitor": 1,
+    "ThermoCube": 1
+}
+
+# Loop through the required parts list
+# and test to see if the user's inventory
+# has the correct quantity of parts.
+for item in items_required:
+    response = search(
+        item_name = item,
+        qty_required = items_required[item]
+    )
+    # If a part is missing, end the script with a
+    # system exit code indicating failure.
+    if not response:
+        n.narrate()
+        sys.exit(1)
+
+# Remove all of the items from the user's inventory;
+# they have collected the correct number of parts.
+for item in items_required:
+    for count in range(items_required[item]):
+        # Drop the item from inventory and then
+        # remove it from the directory immediately
+        pass #Dropped([item])
+        #os.remove(f"{item}.py")
+
+# Narrate the correct outcome
+n.path.change({
+    "act": 1,
+    "scene": 0
+})
+n.narrate()
+
+# If the script gets to this point, the user has
+# collected all of the appropriate parts; set
+# flag in the repository's root directory ".flags"
+# JSON file.
+Checkpoint.set_flag("engine_started")
+
+# Send successfuly exit code.
+sys.exit(0)
