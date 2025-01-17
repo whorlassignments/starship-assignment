@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/hellowhorl/world:0.1.0",
+  "image": "ghcr.io/hellowhorl/world:0.1.2",
   "runArgs": ["--privileged"],
   "customizations": {
     "vscode": {
