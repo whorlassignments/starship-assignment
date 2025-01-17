@@ -1,0 +1,14 @@
+- description: Starship engine started
+  check: MatchCommandFragment
+  options:
+    fragment: "1"
+    count: 1
+    exact: true
+    command: jq .engine_started .flags
+- description: Rocket has lifted off
+  check: MatchCommandFragment
+  options:
+    fragment: "1"
+    count: 1
+    exact: true
+    command: jq .liftoff .flags
