@@ -31,9 +31,10 @@ Try these out by seeing where you can go and then changing your directory to the
 You're not sure where in the ship they are, though you've been promised that they're in there...somewhere.
 When you find a part that you need, you can grab it by using a command called `get`. For example, if you
 were to find a `Sprocket.py` somewhere in the ship, you would: `get Sprocket.py`. This would add the 
-`Sprocket` to your inventory.
+`Sprocket` to your inventory. To see what's in your inventory: type `inventory` at the command line.
 
-To see what's in your inventory: type `inventory` at the command line.
+Curious about what you have in your inventory? You can find out more about it by using the `info` command.
+If you've got a `ThermoCube` in inventory, try it out by typing `info ThermoCube`.
 
 ### Using ship services
 
