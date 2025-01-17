@@ -13,7 +13,7 @@ n = narrator.Narrator()
 # Set up the required number of parts
 # for the user to have collected.
 items_required = {
-    "Sprocket": 3,
+    "Sprocket": 1,
     "FluxCapacitor": 1,
     "ThermoCube": 1
 }
