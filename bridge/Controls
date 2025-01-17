@@ -2,11 +2,14 @@
 
 import os
 import sys
+import narrator
 
 from narrator import Checkpoint
 
+n = narrator.Narrator()
+
 if Checkpoint.check_flag("engine_started"):
-    print("Engine started!")
+    n.narrate()
     sys.exit(0)
 
 print("The ship...doesn't seem to be going anywhere.")

@@ -28,13 +28,15 @@ for item in items_required:
     )
     # If a part is missing, end the script with a
     # system exit code indicating failure.
-    if not response:
+    if not response and not Checkpoint.check_flag("engine_started"):
         n.narrate()
         sys.exit(1)
 
 # Remove all of the items from the user's inventory;
 # they have collected the correct number of parts.
 for item in items_required:
+    if Checkpoint.check_flag("engine_started"):
+        break
     for count in range(items_required[item]):
         # Drop the item from inventory and then
         # remove it from the directory immediately
