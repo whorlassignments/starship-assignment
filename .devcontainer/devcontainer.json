@@ -5,9 +5,6 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-python.pylint",
-        "charliermarsh.ruff",
         "bierner.markdown-checkbox"
       ],
       "settings": {
