@@ -1,6 +1,35 @@
 0:
     0:
         - "🚀 LIFTOFF! 🚀"
+        - ""
+        - The ship begins to smoothly accelerate in the way that
+        - only starships can. The stars begin to rush by.
+        - ""
+        - But suddenly, the ship's engines cut out and the control
+        - panel goes dark. The rest of the ship's power seems to be
+        - on, but it would appear that there are some quirks that
+        - the person you got this ship from didn't tell you about.
+        - ""
+        - Looking at the console, you notice some smoke coming from
+        - behind a small door below the controls. You try to pry it
+        - open using a small gap surrounding the door, but it doesn't
+        - budge.
+        - ""
+        - There's a keypad next to the door. You press a few buttons,
+        - but it's clearly broken. You are overwhelmed with the feeling
+        - that, even though you don't know anything about starships,
+        - you could fix it.
+        - ""
+    1:
+        - "The side of the keypad features a handwritten label:"
+        - " * Take code input and verify by:"
+        - "   * Multiplying by 3"
+        - "   * Adding 6"
+        - "   * Dividing by 3"
+        - "   * Subtracting the original input"
+        - ""
+        - "Yeah, you can do this. You're sure."
+
 1:
     0:
         - The ship...doesn't seem to be going anywhere. Check
