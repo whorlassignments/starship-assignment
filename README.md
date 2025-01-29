@@ -38,7 +38,7 @@ If you've got a `ThermoCube` in inventory, try it out by typing `info ThermoCube
 
 ### Using ship services
 
-Your starship has two devices that help power and guide it: the `Console` and the `Engine`.
+Your starship has two devices that help power and guide it: the `Controls` and the `Engine`.
 
 #### `Engine`
 
