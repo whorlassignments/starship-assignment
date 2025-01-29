@@ -1,0 +1,8 @@
+#!/bin/bash
+
+root=$(python -c "import narrator; print(narrator.root_dir)")
+
+case "$(jq .keycode $root/.flags)" in
+  true ) :;;
+  * ) echo "ACCESS DENIED"; cd ..;;
+esac
