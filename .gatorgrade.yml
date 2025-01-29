@@ -12,13 +12,20 @@
     count: 1
     exact: true
     command: jq .liftoff .flags
-- description: Keypad returns the correct output
+- description: Keypad functions and returns an output (even if not correct)
   check: MatchCommandFragment
   options:
     fragment: "true"
     count: 1
     exact: true
     command: jq .keycode .flags
+- description: Keypad returns the correct output
+  check: MatchCommandFragment
+  options:
+    fragment: "2.0"
+    count: 1
+    exact: true
+    command: 'python -c "from bridge.Keypad import Keypad; k = Keypad(); k.entered = 1414; print(k.decode(1414))"'
 - bridge/Keypad.py:
     - description: Keypad uses an add instruction
       check: MatchFileRegex
@@ -41,6 +48,6 @@
     - description: Keypad uses a divide instruction
       check: MatchFileRegex
       options:
-        regex: '[a-z0-9_]+(\s+)?(\/\=|\/)(\s+)?[a-z0-9_]+'
+        regex: '[a-z0-9_]+(\s+)?[\\\=](\s+)?[a-z0-9_]+'
         count: 2
         exact: true
