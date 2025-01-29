@@ -17,7 +17,7 @@ class Keypad(ItemSpec):
 
     def __str__(self):
         prev_code = Checkpoint.check_flag("last_code")
-        return f"The last code entered reads: {prev_code}"
+        return f"Last code entered: {prev_code}"
 
     def decode(self, code):
         decoded = code * 3

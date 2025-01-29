@@ -12,3 +12,35 @@
     count: 1
     exact: true
     command: jq .liftoff .flags
+- description: Keypad returns the correct output
+  check: MatchCommandFragment
+  options:
+    fragment: "true"
+    count: 1
+    exact: true
+    command: jq .keycode .flags
+- bridge/Keypad.py:
+    - description: Keypad uses an add instruction
+      check: MatchFileRegex
+      options:
+        regex: '[a-z0-9_]+(\s+)?(\+\=|\+)(\s+)?[a-z0-9_]+'
+        count: 1
+        exact: true
+    - description: Keypad uses a multiply instruction
+      check: MatchFileRegex
+      options:
+        regex: '[a-z0-9_]+(\s+)?(\*\=|\*)(\s+)?[a-z0-9_]+'
+        count: 1
+        exact: true
+    - description: Keypad uses a subtract instruction
+      check: MatchFileRegex
+      options:
+        regex: '[a-z0-9_]+(\s+)?(\-\=|\-)(\s+)?[a-z0-9_]+'
+        count: 1
+        exact: true
+    - description: Keypad uses a divide instruction
+      check: MatchFileRegex
+      options:
+        regex: '[a-z0-9_]+(\s+)?(\/\=|\/)(\s+)?[a-z0-9_]+'
+        count: 2
+        exact: true
