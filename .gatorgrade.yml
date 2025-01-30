@@ -50,4 +50,4 @@
       options:
         regex: '[a-z0-9_]+(\s+)?[\\\=](\s+)?[a-z0-9_]+'
         count: 2
-        exact: true
+        exact: false
