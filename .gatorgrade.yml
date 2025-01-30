@@ -48,6 +48,6 @@
     - description: Keypad uses a divide instruction
       check: MatchFileRegex
       options:
-        regex: '[a-z0-9_]+(\s+)?[\\\=](\s+)?[a-z0-9_]+'
+        regex: '[a-z0-9_]+(\s+)?[\/=](\s+)?[a-z0-9_]+'
         count: 2
         exact: true
