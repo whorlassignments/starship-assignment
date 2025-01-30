@@ -63,3 +63,12 @@ it's locked!
 After starting the ship, though, you notice a `Keypad` that _might_ (hint: actually does) open a circuit panel
 for repair. Like everything else on this ship, it needs a bit of TLC. Can you figure out how the internal
 code algorithm works in order to open the panel?
+
+Looking at the `Keypad`, there's a sticker on the side that seems to apply in cases like this:
+```
+Take code input and verify by:
+- Multiplying by 3
+- Adding 6
+- Dividing by 3"
+- Subtracting the original input"
+```
