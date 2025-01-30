@@ -4,5 +4,5 @@ root=$(python -c "import narrator; print(narrator.root_dir)")
 
 case "$(jq .keycode $root/.flags)" in
   true ) :;;
-  * ) echo "ACCESS DENIED"; cd ..;;
+  * ) echo "No matter how hard you try, the door doesn't open."; cd ..;;
 esac

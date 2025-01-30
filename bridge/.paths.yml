@@ -1,6 +1,15 @@
-0:
-    0:
-        - "🚀 LIFTOFF! 🚀"
+#############
+# Controls  #
+#############
+
+rocket:
+    fail:
+        - "⛔ Nothing happens."
+        - ""
+        - The ship...doesn't seem to be going anywhere. Check
+        - and see if the engine started?
+    success:
+        - "🚀 Liftoff!"
         - ""
         - The ship begins to smoothly accelerate in the way that
         - only starships can. The stars begin to rush by.
@@ -20,7 +29,14 @@
         - that, even though you don't know anything about starships,
         - you could fix it.
         - ""
-    1:
+
+##########
+# Keypad #
+##########
+keypad:
+    info:
+        - "🔢 Cracking the code"
+        - ""
         - "The side of the keypad features a handwritten label:"
         - " * Take code input and verify by:"
         - "   * Multiplying by 3"
@@ -29,8 +45,14 @@
         - "   * Subtracting the original input"
         - ""
         - "Yeah, you can do this. You're sure."
-
-1:
-    0:
-        - The ship...doesn't seem to be going anywhere. Check
-        - and see if the engine started?
+    fail:
+        - "⛔ That didn't work."
+        - ""
+        - The noise the Keypad makes isn't encouraging. Have a
+        - look and try again?
+    success:
+        - "✅ Success!"
+        - ""
+        - "A mystical click and hiss: just another of those magical"
+        - starship sounds. Looking around, the door you tried to
+        - force open earlier looks unlocked!

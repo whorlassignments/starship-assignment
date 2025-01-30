@@ -8,18 +8,17 @@ import gitit
 from narrator import Checkpoint
 
 n = narrator.Narrator()
-
+n.path.change({
+    "act": "rocket",
+    "scene": "fail"
+})
 if Checkpoint.check_flag("engine_started"):
     n.path.change({
-        "act": 0,
-        "scene": 1
+        "act": "rocket",
+        "scene": "success"
     })
     Checkpoint.set_flag("liftoff")
     if not os.path.exists("Keypad.py"):
-        n.path.change({
-            "act": 1,
-            "scene": 0
-        })
         gitit.get(
             "https://cdn.githubraw.com/hellowhorl/whorl-objects/main/",
             "space-junk",
