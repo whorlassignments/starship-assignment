@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Keypad",
+  "steps": [
+    {
+      "file": "bridge/Keypad.py",
+      "description": "You only need to work in this section of the file to implement the Keypad's decoding algorithm. As a reminder:\n> Take code input and verify by:\n> - Multiplying by 3\n> - Adding 6\n> - Dividing by 3\n> - Subtracting the original input",
+      "line": 16
+    }
+  ],
+  "description": "A spotlight on the section of code required to fix the Keypad."
+}
