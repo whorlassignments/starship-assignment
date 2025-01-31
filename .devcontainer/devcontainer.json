@@ -5,7 +5,8 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "bierner.markdown-checkbox"
+        "bierner.markdown-checkbox",
+        "vsls-contrib.codetour"
       ],
       "settings": {
         "files.exclude": {
